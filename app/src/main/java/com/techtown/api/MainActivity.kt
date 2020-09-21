@@ -55,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     class HeaderInterceptor : Interceptor {
-        private var clientkey = "tt2Sx2Jl7Uu4AlDK4DhT"
-        private var clientsecretkey = "Tv4QSIJCCi"
+        private var clientkey = ""
+        private var clientsecretkey = ""
         override fun intercept(chain: Interceptor.Chain): okhttp3.Response = chain.run {
             proceed(
                 request()
